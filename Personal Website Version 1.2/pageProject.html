@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assests/css/normalize%20-%20CSS%20Reset%20Library.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <title>Projects | Sanjaya Sandakelum</title>
+    <link rel="icon" href="assests/icon/tab%20logo%20-%20new%203.png">
+    <style>
+        body {
+            background: #222F3E;
+            overflow-x: hidden;
+        }
+        #imgBackground {
+            width: 100vw;
+            height: 200vh;
+            object-fit: cover;
+            opacity: 50%;
+            position: absolute;
+            top: 0;
+        }
+        #titleProject {
+            width: fit-content;
+            height: fit-content;
+            /*background-color: darkblue;*/
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #titleProject > h1 {
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 70px;
+            color: #F5F6FA;
+            margin: 0;
+        }
+        .subTitle {
+            /*font-family: 'Scope One', serif;*/
+            font-family: 'Hind Madurai', sans-serif;
+            /*font-size: 20px;*/
+            color: #F5F6FA;
+            position: relative;
+            left: 10px;
+            top: 70px;
+        }
+
+        #projectGrid {
+            width: 90%;
+            height: 800px;
+            position: absolute;
+            top: 150px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            /*border: 1px solid #4CD137;*/
+            /*background-color: #222F3E;*/
+
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 50px;
+
+        }
+        #projectGrid > div {
+            /*border: 1px solid red;*/
+            position: relative;
+            width: auto;
+            height: auto;
+            background-color: #222F3E;
+        }
+
+        #projectGrid > div > article {
+            width: 100%;
+            height: 70%;
+            background: #353b48;
+            margin-bottom: 10px;
+        }
+        #projectGrid > div > article > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #projectGrid > div > p {
+            width: max-content;
+            height: max-content;
+            font-size: 19px;
+            color: #F5F6FA;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            /*right: 0;*/
+            margin: auto;
+        }
+        .btnShowProject {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            width: 75px;
+            height: 30px;
+            background: #4CD137;
+            border: 0;
+        }
+        .btnShowProject > p {
+            font-family: 'Scope One', serif;
+            color: #F5F6FA;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="assests/img/project%20background%20New%20New%2080%25.jpg" id="imgBackground">
+
+<article id="titleProject">
+    <h1>Projects</h1>
+</article>
+
+<h2 class="subTitle">Internet Technologies</h2>
+
+<section id="projectGrid">
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2001%20-%20Absolute%20Position/assests/img/Project%20img.jpg">
+        </article>
+        <p>Absolute Position</p>
+        <a href="assests/projects/Assignment%2001%20-%20Absolute%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2002%20-%20Fixed%20Position/assests/img/Project%20img.jpg">
+        </article>
+        <p>Fixed Position</p>
+        <a href="assests/projects/Assignment%2002%20-%20Fixed%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2003%20-%20Sticky%20Position/assests/img/Project%20img.jpg">
+        </article>
+        <p>Sticky Position</p>
+        <a href="assests/projects/Assignment%2003%20-%20Sticky%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/assests/img/Project%20img.jpg">
+        </article>
+        <p>Side Navigation Bar</p>
+        <a href="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2005%20-%20Grid/assests/img/Project%20img.jpg">
+        </article>
+        <p>Grid Layout</p>
+        <a href="assests/projects/Assignment%2005%20-%20Grid/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/assests/img/Project%20img.jpg">
+        </article>
+        <p>Water Drop Animation</p>
+        <a href="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/assests/img/Project%20img.jpg">
+        </article>
+        <p>Speed Meter Animation</p>
+        <a href="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/assests/img/Project%20img.jpg">
+        </article>
+        <p>Image Slider</p>
+        <a href="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/assests/img/Project%20img.jpg">
+        </article>
+        <p>Car Animation</p>
+        <a href="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/assests/img/Project%20img.jpg">
+        </article>
+        <p>POS interface - Bootstrap</p>
+        <a href="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        </a>
+    </div>
+
+    <div>
+        <article>
+            <img src="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/assests/img/Project%20img.jpg">
+        </article>
+        <p>SPA POS interface - Using JS</p>
+        <a href="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        </a>
+    </div>
+
+<!--    <div></div>-->
+</section>
+
+<!--<article id="projectSlide">
+    <div id="slide1"></div>
+    <div id="slide2"></div>
+</article>-->
+
+<!--<a id="seemore" href="https://github.com/Sandakelum98"><p>See more ></p></a>-->
+
+<!--<article id="counts">
+    <div class="seperateBar">
+        <h1>50</h1>
+        <p>Clients</p>
+    </div>
+
+    <div class="seperateBar">
+        <h1>105</h1>
+        <p>Projects</p>
+    </div>
+
+    <div>
+        <h1>02</h1>
+        <p>Year Experience</p>
+    </div>
+</article>-->
+
+</body>
+</html>

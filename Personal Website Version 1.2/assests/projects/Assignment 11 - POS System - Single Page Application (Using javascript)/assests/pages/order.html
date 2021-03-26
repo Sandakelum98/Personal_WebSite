@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order | Golden Mart</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <style>
+        .labelSS {
+            position: relative;
+            left: 25px;
+        }
+        .formSS {
+            width: max-content;
+            /*background: dimgrey;*/
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .col {
+            margin-top: 30px;
+            margin-right: 30px;
+            padding: 0;
+            width: 28vw;
+        }
+        .search {
+            margin-left: 30px;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .twoBtn {
+            margin-bottom: 20px;
+        }
+
+        #cart {
+            margin-top: 50px;
+            width: 95vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 75px;
+        }
+        #total {
+            margin: 30px;
+            color: crimson;
+            display: inline;
+        }
+        #finalBtn {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            right: 20px;
+            bottom: -20px;
+        }
+        #completeBtn {
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="orderMenuBar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Golden Mart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<p class="h1" id="title">Order</p>
+
+
+<!--Select Customer Form-->
+<small class="text-muted labelSS">Select Customer</small>
+
+<form class="border formSS">
+
+    <div class="row g-3" >
+        <div class="col search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search Customer" aria-label="Recipient's username"
+                       aria-describedby="button-addon2">
+                <button class="btn btn-dark" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Name" aria-label="Last name">
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Address" aria-label="Last name">
+        </div>
+    </div>
+</form>
+
+
+
+
+<!--Select Item Form-->
+<small class="text-muted labelSS">Select Item</small>
+
+<form class="border formSS">
+
+    <!--Row 1-->
+    <div class="row g-3">
+        <div class="col search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search Item" aria-label="Recipient's username"
+                       aria-describedby="button-addon2">
+                <button class="btn btn-dark" type="button" id="-addon2">Search</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Item Name" aria-label="Last name">
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Qty On Hand" aria-label="Last name">
+        </div>
+    </div>
+
+    <!--Row 2-->
+    <div class="row g-3">
+        <div class="col search">
+            <input type="text" class="form-control" placeholder="Unit Price" aria-label="Last name">
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Qty" aria-label="Last name">
+        </div>
+
+        <div class="col">
+            <button type="button" class="btn btn-dark twoBtn" >Add to Cart</button>
+            <button type="button" class="btn btn-dark twoBtn">Cancel</button>
+        </div>
+    </div>
+</form>
+
+
+
+<!--Cart-->
+<table class="table table-dark table-hover" id="cart">
+    <tr>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Unit Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td>P001</td>
+        <td>Keerisamba Retail</td>
+        <td>105.00</td>
+        <td>20</td>
+        <td>2100.00</td>
+    </tr>
+
+    <tr>
+        <td>P003</td>
+        <td>Anchor F/C Milk powder 450g</td>
+        <td>220.00</td>
+        <td>1</td>
+        <td>220.00</td>
+    </tr>
+</table>
+
+
+<p class="h3" id="total">Total : Rs. 2320 /=</p>
+
+<div id="finalBtn">
+    <button type="button" class="btn btn-primary" id="completeBtn">Complete</button>
+    <button type="button" class="btn btn-primary">Cancel</button>
+</div>
+
+
+</body>
+</html>
