@@ -222,6 +222,7 @@ body {
     height: 50px;
     background: #4CD137;
     border: 0;
+    border-radius: 5%;
     margin-right: 15px;
 }
 .aboutPageButton > button > a {

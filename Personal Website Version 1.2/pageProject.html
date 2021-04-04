@@ -14,14 +14,16 @@
             background: #222F3E;
             overflow-x: hidden;
         }
+
         #imgBackground {
             width: 100vw;
-            height: 200vh;
+            height: 100vh;
             object-fit: cover;
             opacity: 50%;
-            position: absolute;
+            position: fixed;
             top: 0;
         }
+
         #titleProject {
             width: fit-content;
             height: fit-content;
@@ -32,17 +34,20 @@
             right: 0;
             margin: auto;
         }
+
         #titleProject > h1 {
             font-family: 'Hind Madurai', sans-serif;
             font-size: 70px;
             color: #F5F6FA;
             margin: 0;
         }
+
         .subTitle {
-            /*font-family: 'Scope One', serif;*/
             font-family: 'Hind Madurai', sans-serif;
-            /*font-size: 20px;*/
             color: #F5F6FA;
+        }
+
+        #titAssigment {
             position: relative;
             left: 10px;
             top: 70px;
@@ -62,11 +67,11 @@
 
 
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-gap: 50px;
-
         }
+
         #projectGrid > div {
             /*border: 1px solid red;*/
             position: relative;
@@ -75,17 +80,23 @@
             background-color: #222F3E;
         }
 
-        #projectGrid > div > article {
+        .imgArticle {
             width: 100%;
             height: 70%;
             background: #353b48;
             margin-bottom: 10px;
         }
-        #projectGrid > div > article > img {
+
+        .imgArticle:hover {
+            cursor: pointer;
+        }
+
+        .imgArticle > img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         #projectGrid > div > p {
             width: max-content;
             height: max-content;
@@ -97,6 +108,7 @@
             /*right: 0;*/
             margin: auto;
         }
+
         .btnShowProject {
             position: absolute;
             bottom: 5px;
@@ -108,11 +120,73 @@
             height: 30px;
             background: #4CD137;
             border: 0;
+            border-radius: 5%;
         }
+
+        .btnShowProject:hover {
+            cursor: pointer;
+        }
+
         .btnShowProject > p {
             font-family: 'Scope One', serif;
             color: #F5F6FA;
             margin: 0;
+        }
+
+
+        /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+        #titCourseWork {
+            position: relative;
+            left: 10px;
+            top: 990px;
+        }
+
+        #gridCourseWork {
+            width: 90%;
+            height: 300px;
+            /*background: #0a53be;*/
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            /*margin-bottom: 500px;*/
+            top: 1115px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 50px;
+        }
+
+        #gridCourseWork > div {
+            /*background: #4b4276;*/
+        }
+
+        #imgMemoryPOS {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #description > h5 {
+            font-size: 19px;
+            font-family: 'Hind Madurai', sans-serif;
+            color: #F5F6FA;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        #description li {
+            color: #F5F6FA;
+        }
+        #description p {
+            color: #4CD137;
+        }
+
+        #sectionEnd {
+            height: 100px;
+            width: 100px;
+            /*background: #4b4276;*/
+            position: absolute;
+            top: 1415px;
         }
     </style>
 </head>
@@ -123,127 +197,183 @@
     <h1>Projects</h1>
 </article>
 
-<h2 class="subTitle">Internet Technologies</h2>
+<h2 class="subTitle" id="titAssigment">Internet Technologies</h2>
 
 <section id="projectGrid">
+
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2001%20-%20Absolute%20Position/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2001%20-%20Absolute%20Position/index.html" target="_blank">
+            <article class="imgArticle"><img
+                    src="assests/projects/Assignment%2001%20-%20Absolute%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Absolute Position</p>
-        <a href="assests/projects/Assignment%2001%20-%20Absolute%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment01" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2002%20-%20Fixed%20Position/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2002%20-%20Fixed%20Position/index.html" target="_blank">
+            <article class="imgArticle"><img
+                    src="assests/projects/Assignment%2002%20-%20Fixed%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Fixed Position</p>
-        <a href="assests/projects/Assignment%2002%20-%20Fixed%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment02" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2003%20-%20Sticky%20Position/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2003%20-%20Sticky%20Position/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2003%20-%20Sticky%20Position/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Sticky Position</p>
-        <a href="assests/projects/Assignment%2003%20-%20Sticky%20Position/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/-Internet_Technologies-Assignment03" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Side Navigation Bar</p>
-        <a href="assests/projects/Assignment%2004%20-%20Side%20Navigation%20bar/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment04" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2005%20-%20Grid/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2005%20-%20Grid/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2005%20-%20Grid/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Grid Layout</p>
-        <a href="assests/projects/Assignment%2005%20-%20Grid/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment05" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Water Drop Animation</p>
-        <a href="assests/projects/Assignment%2006%20-%20Animation%20(Water%20Drop%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment06" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Speed Meter Animation</p>
-        <a href="assests/projects/Assignment%2007%20-%20Animation%20(Speed%20Meter%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button></a>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment07" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
+        </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Image Slider</p>
-        <a href="assests/projects/Assignment%2008%20-%20Animation%20(Img%20Slider%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment08" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
         </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/index.html" target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>Car Animation</p>
-        <a href="assests/projects/Assignment%2009%20-%20Animation%20(Car%20Animation)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment09" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
         </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>POS interface - Bootstrap</p>
-        <a href="assests/projects/Assignment%2010%20-%20Bootstrap%20(POS%20System%20Interface)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        <a href="https://github.com/Sandakelum98/-Internet_Technologies-Assignment10" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
         </a>
     </div>
 
     <div>
-        <article>
-            <img src="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/assests/img/Project%20img.jpg">
-        </article>
+        <a href="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/index.html"
+           target="_blank">
+            <article class="imgArticle">
+                <img src="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/assests/img/Project%20img.jpg">
+            </article>
+        </a>
         <p>SPA POS interface - Using JS</p>
-        <a href="assests/projects/Assignment%2011%20-%20POS%20System%20-%20Single%20Page%20Application%20(Using%20javascript)/index.html" target="_blank"><button class="btnShowProject"><p>show ></p></button>
+        <a href="https://github.com/Sandakelum98/Internet_Technologies-Assignment11" target="_blank">
+            <button class="btnShowProject"><p>code ></p></button>
         </a>
     </div>
 
-<!--    <div></div>-->
+    <!--    <div></div>-->
 </section>
 
-<!--<article id="projectSlide">
-    <div id="slide1"></div>
-    <div id="slide2"></div>
-</article>-->
+<!--<h1>JAVAFX</h1>-->
+<section>
+    <h2 class="subTitle" id="titCourseWork">In-memory POS System</h2>
 
-<!--<a id="seemore" href="https://github.com/Sandakelum98"><p>See more ></p></a>-->
+    <article id="gridCourseWork">
+        <a href="assests/projects/Course%20Work%20-%20ITS%201119%20(In%20memory%20POS%20System)/index.html" target="_blank">
+            <div> <img src="assests/projects/Course%20Work%20-%20ITS%201119%20(In%20memory%20POS%20System)/assests/img/Project%20img.jpg" id="imgMemoryPOS"></div>
+        </a>
+        <div id="description">
+            <h5>System Requirements</h5>
+            <ol type="01">
+                <li>Add new items and customers to the POS system</li>
+                <li>Place an order, Save the order to the system</li>
+                <li>Manage items and customers (Edit, Remove and Update)</li>
+            </ol>
 
-<!--<article id="counts">
-    <div class="seperateBar">
-        <h1>50</h1>
-        <p>Clients</p>
-    </div>
+            <h5 style="margin-top: 30px">Others</h5>
+            <ul>
+                <li>Single Page Application</li>
+                <li>Use MVC architectural design pattern</li>
+                <li>Save all the data in the memory using arrays.</li>
+                <li>Validate all the fields in every interface of the POS system</li>
+                <li>Automatically generate the order ID.</li>
+                <li>Automatically generate the total and discount</li>
+            </ul>
 
-    <div class="seperateBar">
-        <h1>105</h1>
-        <p>Projects</p>
-    </div>
+            <a href="https://github.com/Sandakelum98/Internet_Technologies-CourseWork01" target="_blank" style="text-decoration: none"> <p>Click to see code ></p> </a>
+        </div>
+    </article>
 
-    <div>
-        <h1>02</h1>
-        <p>Year Experience</p>
-    </div>
-</article>-->
+</section>
+
+<section id="sectionEnd"></section>
 
 </body>
 </html>
